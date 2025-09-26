@@ -1,0 +1,23 @@
+# Unconfiured and default
+
+coc/
+fcitx/
+fcitx/
+glib-2.0/
+gtk-3.0/
+ibus/
+kde.org/
+matplotlib/
+procps/
+session/
+xdg-terminals.list
+
+# Not configured yet
+
+kitty/ 
+chromium/
+libreoffice/
+
+# Not using
+krusaderrc
+

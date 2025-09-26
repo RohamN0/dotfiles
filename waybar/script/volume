@@ -1,0 +1,9 @@
+#!/bin/sh
+VOL=$(amixer get Master | awk -F'[][]' '/%/ { print $2 }' | head -1)
+MUTED=$(amixer get Master | awk '/\[(on|off)\]/ { print $NF }' | head -1)
+
+if [ "$MUTED" = "[off]" ]; then
+  echo " Muted"
+else
+  echo " $VOL"
+fi

@@ -1,0 +1,78 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 28,
+  "modules-left": ["sway/workspaces"],
+  "modules-center": ["clock"],
+  "modules-right": [
+    "network",
+    "custom/volume",
+    "cpu",
+    "memory",
+    "battery#bat0",
+    "battery#bat1",
+    "sway/language",
+  ],
+
+  "sway/workspaces": {
+    "disable-scroll": true,
+    "format": "{icon}",
+    "format-icons": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": "",
+      "default": ""
+    }
+  },
+
+  "clock": {
+    "format": "{:%Y-%m-%d %H:%M}",
+    "tooltip-format": "{:%Y-%m-%d<br>%H:%M:%S}",
+    "interval": 60
+  },
+
+  "custom/volume": {
+    "exec": "~/.config/waybar/script/volume",
+    "interval": 1,
+    "signal": 0
+  }, 
+
+  "network": {
+    "format-wifi": " {signalStrength}% {ipaddr}",
+    "format-ethernet": "󰈁 {ipaddr}",
+    "format-disconnected": "",
+    "tooltip": false
+  },
+
+  "sway/language": {
+    "format": "{short}",
+    "format-icons": {
+      "us": "EN",
+      "ir": "FA"
+    }
+  },
+
+  "cpu": {
+    "format": " {usage}%",
+    "tooltip": false
+  },
+
+  "memory": {
+    "format": "󰍛 {used:0.0f}G",
+    "tooltip": false
+  },
+
+  "battery#bat0": {
+    "bat": "BAT0",
+    "format": " (Bat0){capacity}%",
+    "format-charging": " {capacity}%"
+  },
+
+  "battery#bat1": {
+    "bat": "BAT1",
+    "format": " (Bat1){capacity}%",
+    "format-charging": " {capacity}%"
+  }
+}
+

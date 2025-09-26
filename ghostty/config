@@ -1,0 +1,21 @@
+window-decoration = "server"
+font-size = 10
+background = "1C2021"
+theme = "GruvboxDarkHard"
+window-colorspace = "display-p3"
+adjust-cell-height = "35%"
+cursor-style = "block"
+
+shell-integration-features = "no-cursor,no-title,sudo"
+mouse-hide-while-typing = true
+mouse-scroll-multiplier = 10
+window-save-state = "always"
+window-padding-balance = true
+
+copy-on-select = "clipboard"
+
+keybind = ctrl+a>b=quit
+keybind = ctrl+a>s=new_window
+keybind = ctrl+a>u=scroll_page_up
+keybind = ctrl+a>n=scroll_page_down
+keybind = ctrl+a>m=toggle_maximize

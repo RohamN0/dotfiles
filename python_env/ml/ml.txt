@@ -1,0 +1,15 @@
+transformers
+langchain
+numpy
+pandas
+scipy
+scikit-learn
+matplotlib
+seaborn
+jupyterlab
+jupyter
+tensorflow
+torch
+torchvision
+opencv-python
+jupyter_contrib_nbextensions

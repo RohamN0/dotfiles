@@ -1,0 +1,38 @@
+* {
+  border: none;
+  border-radius: 0;
+  font-family: "FiraCode Nerd Font";
+  font-size: 14px;
+  min-height: 0;
+}
+
+window#waybar {
+  background: linear-gradient(to right, #1e1e1e, #000000);
+  color: #e0e0e0;
+}
+
+#workspaces button {
+  padding: 0 6px;
+  color: #c0c0c0;
+}
+
+#workspaces button.focused {
+  color: #ffffff;
+}
+
+#network,
+#keyboard-state,
+#cpu,
+#memory,
+#battery {
+  padding: 0 10px;
+}
+
+#battery.warning {
+  color: #f1c40f;
+}
+
+#battery.critical {
+  color: #e74c3c;
+}
+
